@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somfai Klímatechnika – Klíma & Hőszivattyú Telepítés</title>
+  <meta name="description" content="Somfai Klímatechnika – Professzionális klíma és hőszivattyú telepítés, karbantartás Esztergomban és országosan. 72 órán belül telepítjük a készüléket!" />
+  <meta name="keywords" content="klíma telepítés, hőszivattyú telepítés, klíma karbantartás, Esztergom, klímatechnika" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#fooldal" class="nav-logo" aria-label="Somfai Klímatechnika főoldal">
+        <img class="logo-svg" src="images/logo.png" alt="" aria-hidden="true"/>
+        <div class="logo-text">
+          <span class="logo-tagline">Tiszta levegő. Precíz munka.</span>
+          <span class="logo-name">SOMFAI</span>
+          <span class="logo-sub">Klímatechnika</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#szolgaltatasok" class="nav-link">Szolgáltatások</a></li>
+        <li><a href="#miert-mi" class="nav-link">Miért mi?</a></li>
+        <li><a href="#rolunk" class="nav-link">Rólunk</a></li>
+        <li><a href="#kapcsolat" class="nav-link nav-cta">Kapcsolat</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="fooldal">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Szakképzett klímatechnikus
+      </div>
+      <h1 class="hero-title reveal">
+        Klíma &amp; Hőszivattyú<br/>
+        <span class="text-accent">Telepítés &amp; Szerviz</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Megbízható, gyors és szakszerű klímatechnikai megoldások –<br class="desktop-only"/>
+        Esztergomban és igény esetén <strong>országosan</strong>.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#kapcsolat" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Ajánlatot kérek
+        </a>
+        <a href="#szolgaltatasok" class="btn btn-ghost">
+          Szolgáltatásaink
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number">72h</span>
+          <span class="stat-label">Telepítési határidő</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Elégedett ügyfél</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number">2 év</span>
+          <span class="stat-label">Garancia</span>
+        </div>
+      </div>
+    </div>
+    <a href="#szolgaltatasok" class="hero-scroll" aria-label="Görgess le">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="szolgaltatasok">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Amit kínálunk</span>
+        <h2 class="section-title">Szolgáltatásaink</h2>
+        <p class="section-subtitle">Teljes körű klímatechnikai megoldások – a felméréstől a telepítésen át a karbantartásig.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="8" width="40" height="16" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M12 16h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="14" y="24" width="4" height="16" rx="1" stroke="currentColor" stroke-width="2"/>
+              <rect x="30" y="24" width="4" height="16" rx="1" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 40h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Klíma telepítés</h3>
+          <p>Falra szerelhető, mennyezeti és kazettás klímaberendezések szakszerű telepítése. Minden típusú lakásban, irodában és üzletben.</p>
+          <ul class="service-list">
+            <li>Helyszíni felmérés</li>
+            <li>Szakszerű rögzítés és csővezetékezés</li>
+            <li>Tesztelés és beüzemelés</li>
+            <li>Kezelési útmutató</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 4v4M24 40v4M4 24h4M40 24h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M9.17 9.17l2.83 2.83M35.17 35.17l2.83 2.83M35.17 9.17l-2.83 2.83M9.17 35.17l2.83 2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Klíma karbantartás</h3>
+          <p>Rendszeres karbantartással meghosszabbíthatja klímája élettartamát, javítja hatékonyságát és megelőzheti a drága meghibásodásokat.</p>
+          <ul class="service-list">
+            <li>Szűrők tisztítása, cseréje</li>
+            <li>Hűtőközeg ellenőrzés</li>
+            <li>Elektromos rendszer vizsgálat</li>
+            <li>Teljesítmény optimalizálás</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="6" y="28" width="36" height="14" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 28V20a8 8 0 0116 0v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M20 34h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 10V6M17 12l-3-3M31 12l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Hőszivattyú telepítés</h3>
+          <p>Levegő-víz és levegő-levegő hőszivattyúk professzionális telepítése. Energiatakarékos fűtési és hűtési megoldás a jövőre.</p>
+          <ul class="service-list">
+            <li>Energetikai tanácsadás</li>
+            <li>Teljes rendszer telepítés</li>
+            <li>Villamos csatlakoztatás</li>
+            <li>Hatósági bejelentés segítség</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 38L6 42M38 38l4 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="10" y="16" width="28" height="22" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M18 16v-4a6 6 0 0112 0v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 24v4M20 26h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Hőszivattyú karbantartás</h3>
+          <p>A hőszivattyú hosszú távú hatékony működéséhez elengedhetetlen az évi egyszeri szakszerű karbantartás és ellenőrzés.</p>
+          <ul class="service-list">
+            <li>Kondenzátor és párologtató tisztítás</li>
+            <li>Hűtőközeg nyomásmérés</li>
+            <li>Vezérlőrendszer ellenőrzés</li>
+            <li>Teljesítmény mérés, optimalizálás</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us section section-dark" id="miert-mi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Előnyeink</span>
+        <h2 class="section-title">Miért válasszon minket?</h2>
+        <p class="section-subtitle">Nem csupán klímát telepítünk – megbízható partnert kap a teljes folyamatban.</p>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 12v12l8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>72 órán belül</h3>
+          <p>Megrendelés után legkésőbb 72 órán belül telepítjük a készüléket. Nem kell heteket várni!</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 34l8-8 6 6 10-12 12 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="6" width="40" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3>Szakképzett szerelők</h3>
+          <p>Vizsgázott, OKJ-s klímatechnikusok végzik a munkát. Minden beavatkozás az előírások szerint, dokumentálva.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 4L6 12v12c0 10.5 7.5 20.3 18 23 10.5-2.7 18-12.5 18-23V12L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M16 24l6 6 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Garancia &amp; Megbízhatóság</h3>
+          <p>Munkáinkra garanciát vállalunk. Amit elvállalunk, azt el is végezzük – időre, szakszerűen, tisztán.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 24l16-16 16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 18v18h20V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 36v-8h8v8" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3>Gyors kiszállás</h3>
+          <p>Esztergom és környéke – de igény esetén az egész ország területén vállalunk munkát.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 14v6l4 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 32c1.5-2 4-3.5 8-3.5s6.5 1.5 8 3.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Kedvező árak</h3>
+          <p>Versenyképes áron, átlátható árajánlattal dolgozunk. Nincsenek rejtett költségek.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="rolunk">
+    <div class="container about-container">
+      <div class="about-visual reveal">
+        <div class="about-logo-wrap">
+          <img class="about-logo-svg" src="images/logo.png" alt="Somfai Klímatechnika logó"/>
+        </div>
+        <div class="about-credentials">
+          <div class="credential">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            OKJ-s klímatechnikus képesítés
+          </div>
+          <div class="credential">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            F-gáz kezelői engedély
+          </div>
+          <div class="credential">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Egyéni vállalkozó, bejegyzett cég
+          </div>
+          <div class="credential">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Biztosítással rendelkező vállalkozás
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="section-tag">Rólunk</span>
+        <h2 class="section-title">Szakértelem és szenvedély<br/>minden munkában</h2>
+        <p>A Somfai Klímatechnika egy fiatal, lelkes csapat, amely azzal a meggyőződéssel dolgozik, hogy minden ügyfél megérdemel egy megbízható, hosszú távon is elérhető klímatechnikai partnert.</p>
+        <p>Somfai Tamás, a cég alapítója szakképzett klímatechnikusként több év tapasztalattal rendelkezik klímák és hőszivattyúk telepítésében és karbantartásában. A csapat elkötelezett amellett, hogy a munkát mindig az előírások szerint, pontosan és tisztán végezze el.</p>
+        <p>Legyen szó egy egyszerű split klíma beszerelésről vagy egy összetett hőszivattyú rendszer kiépítéséről – mi vagyunk a megfelelő partnerek. <strong>Hüvös nyár. Meleg otthon. Biztos kéz.</strong></p>
+        <a href="#kapcsolat" class="btn btn-primary">Vegye fel velünk a kapcsolatot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section section-light" id="kapcsolat">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Kapcsolat</span>
+        <h2 class="section-title">Írjon vagy hívjon minket!</h2>
+        <p class="section-subtitle">Díjmentes helyszíni felmérés és árajánlat. Általában 24 órán belül válaszolunk.</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info reveal">
+          <h3>Elérhetőségeink</h3>
+
+          <a href="tel:+36705501452" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Telefon</span>
+              <span class="contact-value">06/70 550 1452</span>
+            </div>
+          </a>
+
+          <a href="mailto:somfai.tamas02@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">E-mail</span>
+              <span class="contact-value">somfai.tamas02@gmail.com</span>
+            </div>
+          </a>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Székhely</span>
+              <span class="contact-value">Esztergom – igény esetén országosan</span>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Hétköznap 7:00–18:00 között, szombaton 8:00–14:00 között érhetők el telefonon.
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <!-- TODO: Formspree integrációhoz cserélje le az action értéket:
+               action="https://formspree.io/f/AZ_ÖN_FORM_ID-ja"
+               Regisztráljon a formspree.io oldalon, majd illessze be az egyedi form ID-t. -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Teljes neve <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Pl. Kovács János" required autocomplete="name" />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefonszám <span class="required" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="Pl. +36 30 123 4567" required autocomplete="tel" />
+              <span class="field-error" id="phoneError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail cím</label>
+            <input type="email" id="email" name="email" placeholder="pl. pelda@email.hu" autocomplete="email" />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Miben segíthetünk? <span class="required" aria-hidden="true">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Válasszon...</option>
+              <option value="klima-telepites">Klíma telepítés</option>
+              <option value="klima-karbantartas">Klíma karbantartás</option>
+              <option value="hoszivattyú-telepites">Hőszivattyú telepítés</option>
+              <option value="hoszivattyú-karbantartas">Hőszivattyú karbantartás</option>
+              <option value="egyeb">Egyéb megkeresés</option>
+            </select>
+            <span class="field-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Üzenet</label>
+            <textarea id="message" name="message" rows="4" placeholder="Írjon néhány sort a munkáról (helyszín, klíma típusa, lakás mérete stb.)..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Üzenet küldése</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.
+          </div>
+          <div class="form-error-msg" id="formErrorMsg" role="alert" aria-live="polite">
+            Sajnos hiba történt az üzenet küldésekor. Kérjük, hívjon minket telefonon!
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#fooldal" class="nav-logo footer-logo" aria-label="Somfai Klímatechnika főoldal">
+          <img class="logo-svg logo-svg--small" src="images/logo.png" alt="" aria-hidden="true"/>
+          <div class="logo-text">
+            <span class="logo-name">SOMFAI</span>
+            <span class="logo-sub">Klímatechnika</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Tiszta levegő. Precíz munka.</p>
+        <p class="footer-desc">Professzionális klíma és hőszivattyú telepítés, karbantartás Esztergomban és országosan.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Gyorslinkek</h4>
+        <ul>
+          <li><a href="#fooldal">Főoldal</a></li>
+          <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+          <li><a href="#miert-mi">Miért mi?</a></li>
+          <li><a href="#rolunk">Rólunk</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Szolgáltatások</h4>
+        <ul>
+          <li><a href="#szolgaltatasok">Klíma telepítés</a></li>
+          <li><a href="#szolgaltatasok">Klíma karbantartás</a></li>
+          <li><a href="#szolgaltatasok">Hőszivattyú telepítés</a></li>
+          <li><a href="#szolgaltatasok">Hőszivattyú karbantartás</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Elérhetőség</h4>
+        <ul>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+36705501452">06/70 550 1452</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:somfai.tamas02@gmail.com">somfai.tamas02@gmail.com</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Esztergom – országosan
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Somfai Klímatechnika – Somfai Tamás egyéni vállalkozó. Minden jog fenntartva.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lebegő hívás gomb – csak mobilon látható -->
+  <a href="tel:+36705501452" class="mobile-call-btn" aria-label="Hívjon minket: 06 70 550 1452">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Hívjon most!
+  </a>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Vissza a tetejére">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

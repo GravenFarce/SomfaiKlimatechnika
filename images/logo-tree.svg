@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 205">
+  <!-- Törzs – Y elágazás -->
+  <line x1="100" y1="197" x2="79"  y2="133" stroke="#145c48" stroke-width="21" stroke-linecap="round"/>
+  <line x1="100" y1="197" x2="121" y2="133" stroke="#145c48" stroke-width="21" stroke-linecap="round"/>
+
+  <!-- Lombkorona réteg 1 – alul, legsötétebb -->
+  <path d="M 39 140 C 39 105, 161 105, 161 140 C 161 167, 136 180, 100 180 C 64 180, 39 167, 39 140 Z" fill="#1a6b54"/>
+  <!-- Lombkorona réteg 2 -->
+  <path d="M 46 110 C 46 73, 154 73, 154 110 C 154 140, 132 155, 100 155 C 68 155, 46 140, 46 110 Z" fill="#238f7a"/>
+  <!-- Lombkorona réteg 3 -->
+  <path d="M 53 78 C 53 40, 147 40, 147 78 C 147 111, 127 127, 100 127 C 73 127, 53 111, 53 78 Z" fill="#2da898"/>
+  <!-- Lombkorona réteg 4 – felül, legvilágosabb -->
+  <path d="M 61 46 C 61 10, 139 10, 139 46 C 139 79, 122 96, 100 96 C 78 96, 61 79, 61 46 Z" fill="#4dbdb0"/>
+
+  <!-- Fehér széljelek -->
+  <path d="M 72 34 Q 88 18 107 30 Q 122 40 135 26" stroke="white" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+  <path d="M 55 80  Q 76 63 100 73 Q 124 83 148 68"  stroke="white" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+</svg>

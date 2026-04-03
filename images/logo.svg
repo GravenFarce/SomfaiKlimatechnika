@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 510" width="420" height="510">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Háttér -->
+  <rect width="420" height="510" fill="#eeeeea"/>
+
+  <!-- =====================
+       TÖRZS – Y elágazás
+       ===================== -->
+  <line x1="210" y1="295" x2="186" y2="236" stroke="#145c48" stroke-width="26" stroke-linecap="round"/>
+  <line x1="210" y1="295" x2="234" y2="236" stroke="#145c48" stroke-width="26" stroke-linecap="round"/>
+
+  <!-- =====================
+       LOMBKORONA – 4 réteg
+       alulról felfelé rajzolva
+       ===================== -->
+
+  <!-- 4. réteg (alul, legsötétebb, legszélesebb) -->
+  <path d="
+    M 82 236
+    C 82 193, 338 193, 338 236
+    C 338 268, 293 283, 210 283
+    C 127 283, 82 268, 82 236 Z
+  " fill="#1a6b54"/>
+
+  <!-- 3. réteg -->
+  <path d="
+    M 96 198
+    C 96 155, 324 155, 324 198
+    C 324 232, 282 248, 210 248
+    C 138 248, 96 232, 96 198 Z
+  " fill="#238f7a"/>
+
+  <!-- 2. réteg -->
+  <path d="
+    M 110 159
+    C 110 114, 310 114, 310 159
+    C 310 194, 272 212, 210 212
+    C 148 212, 110 194, 110 159 Z
+  " fill="#2da898"/>
+
+  <!-- 1. réteg (felül, legvilágosabb) -->
+  <path d="
+    M 128 115
+    C 128 62, 292 62, 292 115
+    C 292 156, 260 176, 210 176
+    C 160 176, 128 156, 128 115 Z
+  " fill="#4dbdb0"/>
+
+  <!-- =====================
+       FEHÉR SZÉLJELEK
+       ===================== -->
+  <!-- Felső, nagyobb ív -->
+  <path d="M 148 96 Q 178 72 213 88 Q 244 102 266 84"
+        stroke="white" stroke-width="7.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Alsó ív -->
+  <path d="M 118 156 Q 158 133 210 145 Q 263 158 306 138"
+        stroke="white" stroke-width="6.5" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- =====================
+       SZÖVEG
+       ===================== -->
+
+  <!-- Tagline -->
+  <text x="210" y="326"
+        text-anchor="middle"
+        font-family="'Montserrat', Georgia, serif"
+        font-size="15.5"
+        font-weight="400"
+        fill="#999999"
+        letter-spacing="0.8">Tiszta levegő. Precíz munka.</text>
+
+  <!-- SOMFAI -->
+  <text x="210" y="412"
+        text-anchor="middle"
+        font-family="'Montserrat', 'Arial Black', sans-serif"
+        font-size="86"
+        font-weight="900"
+        fill="#145c48"
+        letter-spacing="5">SOMFAI</text>
+
+  <!-- KLÍMATECHNIKA -->
+  <text x="210" y="456"
+        text-anchor="middle"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#2da898"
+        letter-spacing="9">KLÍMATECHNIKA</text>
+</svg>
