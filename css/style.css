@@ -1086,8 +1086,8 @@ a.contact-item:hover {
   .why-card    { padding: 22px 16px; }
 
   /* Rólunk szekció */
-  .about-logo-wrap { width: 180px; height: 180px; }
-  .about-logo-svg  { width: 110px; }
+  .about-logo-wrap { width: 220px; }
+  .about-logo-svg  { width: 100%; }
 
   /* Elérhetőség info blokk teljes szélességű */
   .contact-info h3 { font-size: 1.05rem; }
