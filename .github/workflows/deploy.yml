@@ -21,6 +21,7 @@ jobs:
           lftp -u "somfaikl,$FTP_PASSWORD" ftp://tefiftythree.tarhely.eu <<'EOF'
           set ftp:ssl-allow no
           set ftp:passive-mode yes
+          cd public_html
           mirror --reverse --delete --verbose \
             --exclude-glob .git \
             --exclude-glob .github/ \
@@ -29,6 +30,6 @@ jobs:
             --exclude-glob phpunit.xml \
             --exclude-glob composer.json \
             --exclude-glob qr-admin/includes/config.php \
-            . /
+            . .
           bye
           EOF
