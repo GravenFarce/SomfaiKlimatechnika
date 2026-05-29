@@ -30,6 +30,6 @@ jobs:
             --exclude-glob phpunit.xml \
             --exclude-glob composer.json \
             --exclude-glob qr-admin/includes/config.php \
-            . public_html/
+            . /
           bye
           EOF
