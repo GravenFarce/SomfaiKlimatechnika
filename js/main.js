@@ -137,29 +137,13 @@ form.addEventListener('submit', async (e) => {
   const data = new FormData(form);
 
   try {
-    /*
-     * FORMSPREE INTEGRÁCIÓ:
-     * 1. Regisztráljon a https://formspree.io oldalon.
-     * 2. Hozzon létre egy új Form-ot a somfai.tamas02@gmail.com e-mail címhez.
-     * 3. Cserélje le az alábbi 'YOUR_FORM_ID' értéket a kapott egyedi azonosítóra.
-     *    Pl.: https://formspree.io/f/xpwzjkab
-     */
-    const FORMSPREE_ID = 'YOUR_FORM_ID'; // <-- IDE ÍRJA A SAJÁT FORM ID-JÁT
-
-    if (FORMSPREE_ID === 'YOUR_FORM_ID') {
-      // Fejlesztési módban: szimulált siker (5 másodperc után)
-      await new Promise(res => setTimeout(res, 1200));
-      showSuccess();
-      return;
-    }
-
-    const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+    const response = await fetch('contact.php', {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+      body: data
     });
 
-    if (response.ok) {
+    const result = await response.json();
+    if (response.ok && result.ok) {
       showSuccess();
     } else {
       showError();
