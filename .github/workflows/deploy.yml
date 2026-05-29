@@ -14,10 +14,11 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp.somfaiklimatechnika.hu
+          server: somfaiklimatechnika.hu
           username: somfaikl
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/
+          protocol: ftps
+          server-dir: /public_html/
           exclude: |
             **/.git*
             **/.git*/**
