@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /qr-admin/
+Disallow: /r/
+
+Sitemap: https://somfaiklimatechnika.hu/sitemap.xml
