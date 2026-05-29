@@ -21,7 +21,11 @@ jobs:
           lftp -u "somfaikl,$FTP_PASSWORD" ftp://tefiftythree.tarhely.eu <<'EOF'
           set ftp:ssl-allow no
           set ftp:passive-mode yes
-          mirror --reverse --delete --verbose \
+          set net:timeout 30
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          set ftp:use-mdtm no
+          mirror --reverse --delete --no-perms --verbose \
             --exclude-glob .git \
             --exclude-glob .github/ \
             --exclude-glob tests/ \
