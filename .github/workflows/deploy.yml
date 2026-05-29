@@ -18,7 +18,7 @@ jobs:
         env:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          lftp -d -u "somfaikl,$FTP_PASSWORD" ftp://somfaiklimatechnika.hu <<'EOF'
+          lftp -d -u "somfaikl,$FTP_PASSWORD" ftp://tefiftythree.tarhely.eu <<'EOF'
           set ftp:ssl-allow no
           set ftp:passive-mode yes
           pwd
