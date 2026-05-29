@@ -11,19 +11,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
       - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: somfaiklimatechnika.hu
-          username: somfaikl
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          server-dir: /public_html/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/tests/**
-            **/docs/**
-            phpunit.xml
-            composer.json
-            qr-admin/includes/config.php
+        env:
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp -u "somfaikl,$FTP_PASSWORD" ftp://somfaiklimatechnika.hu <<'EOF'
+          set ftp:ssl-allow yes
+          set ssl:verify-certificate no
+          set ftp:passive-mode yes
+          mirror --reverse --delete --verbose \
+            --exclude-glob .git \
+            --exclude-glob .github/ \
+            --exclude-glob tests/ \
+            --exclude-glob docs/ \
+            --exclude-glob phpunit.xml \
+            --exclude-glob composer.json \
+            --exclude-glob qr-admin/includes/config.php \
+            . public_html/
+          bye
+          EOF
