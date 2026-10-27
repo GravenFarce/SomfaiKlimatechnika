@@ -29,6 +29,7 @@ jobs:
             --exclude-glob docs/ \
             --exclude-glob phpunit.xml \
             --exclude-glob composer.json \
+            --exclude-glob CLAUDE.md \
             --exclude-glob qr-admin/includes/config.php \
             . public_html
           bye
