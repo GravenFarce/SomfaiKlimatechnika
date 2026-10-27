@@ -1,31 +1,10 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 function send_password_reminder(string $password): bool
 {
-    require_once __DIR__ . '/../../vendor/autoload.php';
+    $subject = 'QR Admin – Jelszó emlékeztető';
+    $message = "A jelenlegi QR Admin jelszava: {$password}";
+    $headers = 'From: noreply@somfaiklimatechnika.hu' . "\r\n" .
+               'Content-Type: text/plain; charset=UTF-8';
 
-    $mail = new PHPMailer(true);
-    try {
-        $mail->isSMTP();
-        $mail->Host       = SMTP_HOST;
-        $mail->SMTPAuth   = true;
-        $mail->Username   = SMTP_USER;
-        $mail->Password   = SMTP_PASS;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = SMTP_PORT;
-        $mail->CharSet    = 'UTF-8';
-
-        $mail->setFrom(SMTP_USER, 'QR Admin');
-        $mail->addAddress(ADMIN_EMAIL);
-        $mail->Subject = 'QR Admin – Jelszó emlékeztető';
-        $mail->Body    = "A jelenlegi QR Admin jelszava: {$password}";
-
-        $mail->send();
-        return true;
-    } catch (Exception $e) {
-        error_log('Mailer error: ' . $e->getMessage());
-        return false;
-    }
+    return mail(ADMIN_EMAIL, $subject, $message, $headers);
 }
