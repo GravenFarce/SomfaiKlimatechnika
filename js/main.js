@@ -174,3 +174,8 @@ function showError() {
 
 // ---- Aktuális év a footerben ----
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---- Cookie-beállítások (a Cookiebot panelt nyitja újra) ----
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-cookie-settings]') && window.Cookiebot) window.Cookiebot.renew();
+});

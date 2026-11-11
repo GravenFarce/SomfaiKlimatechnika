@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Cookie-hozzájárulás (Consent Mode) – a GTM előtt -->
-  <script src="js/consent.js"></script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -58,14 +56,18 @@
 
       <h2>2. Cookie-k (sütik) és hasonló technológiák</h2>
       <p>
-        Az oldalon az első látogatáskor megjelenő sávban kérjük a hozzájárulását a nem feltétlenül szükséges sütikhez.
+        Az oldalon az első látogatáskor megjelenő Cookiebot (Usercentrics) ablakban kérjük a hozzájárulását a nem feltétlenül szükséges sütikhez.
         A választását bármikor módosíthatja az oldal alján lévő <button type="button" class="cookie-settings-link" data-cookie-settings>Cookie-beállítások</button> hivatkozásra kattintva.
+        A döntését a Cookiebot saját sütije (<code>CookieConsent</code>) őrzi a böngészőjében.
       </p>
       <ul>
         <li>
-          <strong>Szükséges adatok.</strong> Az oldal működéséhez és a hozzájárulási döntése megjegyzéséhez szükségesek
-          (a döntést a böngészője helyi tárolójában, <code>somfai_consent</code> néven őrizzük, amíg Ön törli vagy módosítja).
+          <strong>Elengedhetetlen sütik.</strong> Az oldal működéséhez és a hozzájárulási döntése megjegyzéséhez szükségesek.
           Jogalap: a GDPR 6. cikk (1) bekezdés f) pontja szerinti jogos érdek (az oldal biztonságos és működőképes üzemeltetése).
+        </li>
+        <li>
+          <strong>Beállítások (preferencia) sütik.</strong> Az oldal megjelenésével és működésével kapcsolatos választásait jegyzik meg.
+          Csak az Ön előzetes hozzájárulása után működnek. Jogalap: GDPR 6. cikk (1) bekezdés a) pont (hozzájárulás).
         </li>
         <li>
           <strong>Statisztikai sütik.</strong> Anonim látogatottsági statisztikák készítéséhez (Google Analytics, a Google Tag Manageren keresztül).
@@ -106,6 +108,7 @@
       <h2>4. Adatfeldolgozók és címzettek</h2>
       <ul>
         <li><strong>Tárhely.eu Kft.</strong> (Budapest) – tárhely- és levelezési szolgáltató.</li>
+        <li><strong>Usercentrics A/S</strong> (Cookiebot) – a cookie-hozzájárulás kezelése.</li>
         <li><strong>Google Ireland Limited</strong> – Google Tag Manager, Analytics és Ads szolgáltatások (csak hozzájárulás esetén a statisztikai és marketing célú adatokra).</li>
         <li><strong>Cloudflare, Inc.</strong> – Web Analytics (sütik nélküli, összesített forgalmi mérés).</li>
       </ul>
@@ -153,6 +156,11 @@
       </div>
     </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('[data-cookie-settings]') && window.Cookiebot) window.Cookiebot.renew();
+    });
+  </script>
 </body>
 </html>
