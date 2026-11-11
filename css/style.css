@@ -773,8 +773,6 @@ a.contact-item:hover {
 }
 .field-error.show { display: block; }
 
-.form-check { flex-direction: row; align-items: flex-start; gap: 10px; }
-.form-check { flex-direction: column; }
 .checkbox-label {
   display: flex;
   gap: 10px;
@@ -1146,7 +1144,7 @@ a.contact-item:hover {
 .legal mark { background: #fff3b0; padding: 0 4px; }
 .footer-bottom a { color: inherit; text-decoration: underline; }
 
-.form-check { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; }
+.form-check { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 4px 10px; }
 .form-check input[type="checkbox"] { width: 18px; height: 18px; margin-top: 3px; flex-shrink: 0; accent-color: var(--clr-primary); padding: 0; }
 .form-check label { flex: 1; margin: 0; font-weight: 400; font-family: var(--font-body); font-size: 0.85rem; line-height: 1.5; }
 .form-check label a { color: var(--clr-primary); text-decoration: underline; }
