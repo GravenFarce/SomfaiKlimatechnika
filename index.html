@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Cookie-hozzájárulás (Consent Mode) – a GTM előtt -->
+  <script src="js/consent.js"></script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -429,6 +431,11 @@
             <label for="message">Üzenet</label>
             <textarea id="message" name="message" rows="4" placeholder="Írjon néhány sort a munkáról (helyszín, klíma típusa, lakás mérete stb.)..."></textarea>
           </div>
+          <div class="form-group form-check">
+            <input type="checkbox" id="privacy" name="privacy" value="1" required />
+            <label for="privacy">Elolvastam és elfogadom az <a href="adatkezelesi-tajekoztato.html" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>. <span class="required" aria-hidden="true">*</span></label>
+            <span class="field-error" id="privacyError"></span>
+          </div>
           <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
             <span class="btn-text">Üzenet küldése</span>
             <span class="btn-spinner" aria-hidden="true"></span>
@@ -501,7 +508,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; <span id="year"></span> Somfai Klímatechnika – Somfai Klímatechnika Kft.. Minden jog fenntartva.</p>
+        <p>&copy; <span id="year"></span> Somfai Klímatechnika – Somfai Klímatechnika Kft.. Minden jog fenntartva. &middot; <a href="adatkezelesi-tajekoztato.html">Adatkezelési tájékoztató</a> &middot; <button type="button" class="cookie-settings-link" data-cookie-settings>Cookie-beállítások</button></p>
       </div>
     </div>
   </footer>

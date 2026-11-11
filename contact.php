@@ -13,7 +13,7 @@ $email   = trim($_POST['email']   ?? '');
 $subject = trim($_POST['subject'] ?? '');
 $message = trim($_POST['message'] ?? '');
 
-if (!$name || !$phone || !$subject) {
+if (!$name || !$phone || !$subject || empty($_POST['privacy'])) {
     http_response_code(400);
     echo json_encode(['ok' => false]);
     exit;

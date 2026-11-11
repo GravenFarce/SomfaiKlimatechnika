@@ -95,7 +95,9 @@ function validateField(input) {
   const errorEl = document.getElementById(input.id + 'Error');
   let message = '';
 
-  if (input.required && !input.value.trim()) {
+  if (input.type === 'checkbox') {
+    if (input.required && !input.checked) message = 'A küldéshez el kell fogadnia az adatkezelési tájékoztatót.';
+  } else if (input.required && !input.value.trim()) {
     message = 'Ez a mező kötelező.';
   } else if (input.type === 'email' && input.value && !/.+@.+\..+/.test(input.value)) {
     message = 'Adjon meg érvényes e-mail címet.';
@@ -114,6 +116,9 @@ function validateField(input) {
 // Valósidejű validáció (csak ha már érintett)
 form.querySelectorAll('input, select, textarea').forEach(field => {
   field.addEventListener('blur', () => validateField(field));
+  field.addEventListener('change', () => {
+    if (field.classList.contains('invalid')) validateField(field);
+  });
   field.addEventListener('input', () => {
     if (field.classList.contains('invalid')) validateField(field);
   });
